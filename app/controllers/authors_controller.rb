@@ -23,7 +23,7 @@ class AuthorsController < ApplicationController
       # If the author is invalid, hold on to @author, because it is now full of
       # useful error messages, and re-render the :new page, which knows how
       # to display them alongside the user's entries.
-      redirect_to author_path(@author)
+      render :show
     end
   end
 
